@@ -12,10 +12,48 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 </head>
 <body>
+    
+<div class="container-fluid">
+    <div class="menu" id="menu-button">
+        <button type="button" id="menu"><i class="fa fa-bars" aria-hidden="true" id="ham"></i></button>
+    </div>
+    
+    <div class="slide-menu" id="slide-menu">
+        <ul>
+            <li><%= link_to 'Home', '/' %></li>
+            <li><%= link_to 'About', '/about' %></li>
+            <li><%= link_to 'Contact', '/contact' %></li>
+        </ul>
+    </div>
 
-<%= yield %>
+    <%= yield %>
 
+    <footer class="part5">
+        <h3>A CODECADEMY PROJECT</h3>
+    </footer>
+</div>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var header = $(".clearHeader");
+        
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            
+            if (scroll >= 620 && scroll <= 970) {
+                $("#ham").addClass("black");
+            } else {
+                $("#ham").removeClass("black");
+            }
+        });
+        
+        $('#menu').click(function() {
+            $('#slide-menu').toggleClass('left');
+            $('#menu-button').toggleClass('replace');
+        });
+    });
+</script>
 </body>
 </html>

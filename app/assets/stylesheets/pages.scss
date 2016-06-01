@@ -10,13 +10,13 @@
     position: fixed;
     font-weight: 100;
     color: white;
-    left: 270px;
+    left: 20px;
     top: 20px;
     font-size: 35px;
     transition: all ease-in-out .35s;
 }
 
-.replace { left: 20px; }
+.replace { left: 270px; }
 
 .menu > button {
     border: 0;
@@ -30,14 +30,37 @@
 .slide-menu {
     position: fixed;
     width: 250px;
+    left: -250px;
     height: 100vh;
     background: #34495e;
     transition: all ease-in-out .35s;
 }
 
-.left { width: 0px; }
+.left { left: 0px; }
 
 #ham { transition: all linear .2s; }
+
+#ham:hover { color: #8e44ad; transition: all linear .2s; }
+
+.slide-menu > ul { list-style: none; }
+
+.slide-menu > ul > li { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px; 
+    color: white;
+    padding: 20px 0 20px 35px ;
+}
+
+.slide-menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    transition: all linear .2s;
+} 
+
+.slide-menu > ul > li > a:hover {
+    color: #e74c3c;
+    transition: all linear .2s;    
+}  
 
 .part1 {
     background: url('http://i.imgur.com/Dk5MoSY.jpg') no-repeat;
