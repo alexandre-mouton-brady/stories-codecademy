@@ -1,0 +1,41 @@
+// Place all the styles related to the Signups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.part8 {
+    background: url('http://i.imgur.com/TqqezTV.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.part8 > h1 { 
+    text-align: center;
+    color: white;
+    margin-bottom: 100px; 
+}
+
+.form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.form > form > label {
+    text-align: center;
+    display: block;
+}    
+
+.form > form > input {
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    border-radius: 2px;
+}
+
+.form > form > input[type=submit] {
+    background: #3498db;
+    color: white;
+}
