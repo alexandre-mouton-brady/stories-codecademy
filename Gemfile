@@ -14,7 +14,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'coffee-script-source', '1.8.0'
 
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
+
+gem 'sqlite3', group: :development
+gem 'pg', '0.18.1', group: :production
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
