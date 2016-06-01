@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="menu" id="menu-button">
+        <button type="button" id="menu"><i class="fa fa-bars" aria-hidden="true" id="ham"></i></button>
+    </div>
+    
+    <div class="slide-menu" id="slide-menu">
+        
+    </div>
+
+    <div class="part1">
+        <h1>Create and share Stories</h1>
+        <a href="#" class="btn btn-primary pull-right">Learn more</a>
+    </div>
+    
+    <div class="part2">
+        <h1>Relive and share your adventures</h1>
+        <p>
+            Stories automatically creates a digital journal filled with only your best photos
+        </p>
+    </div>
+    
+    <div class="part3"></div>
+    
+    <div class="part4">
+        <h1>Discover Stories</h1>
+        <a href="#" class="btn btn-primary">Learn more</a>
+    </div>
+    
+    <footer class="part5">
+        <h3>A CODECADEMY PROJECT</h3>
+    </footer>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var header = $(".clearHeader");
+            
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                
+                if (scroll >= 620 && scroll <= 970) {
+                    $("#ham").addClass("black");
+                } else {
+                    $("#ham").removeClass("black");
+                }
+            });
+            
+            $('#menu').click(function() {
+                $('#slide-menu').toggleClass('left');
+                $('#menu-button').toggleClass('replace');
+            });
+        });
+    </script>
+
+</div>

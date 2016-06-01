@@ -1,0 +1,83 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container-fluid { padding: 0 !important; }
+
+.black { color: black; }
+
+.menu {
+    position: fixed;
+    font-weight: 100;
+    color: white;
+    left: 270px;
+    top: 20px;
+    font-size: 35px;
+    transition: all ease-in-out .35s;
+}
+
+.replace { left: 20px; }
+
+.menu > button {
+    border: 0;
+    background: transparent;
+}
+
+.menu > button:focus {
+    outline:0;    
+}
+
+.slide-menu {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #34495e;
+    transition: all ease-in-out .35s;
+}
+
+.left { width: 0px; }
+
+#ham { transition: all linear .2s; }
+
+.part1 {
+    background: url('http://i.imgur.com/Dk5MoSY.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.part1 > h1 {
+    font-size: 35px;
+    font-weight: 100;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: right;
+    margin: 30vh 100px 25px 0;
+    letter-spacing: 0.7px;
+}
+
+.part1 > a { margin: 0 17% 0 0; }
+
+.part2 { padding: 110px 0; }
+
+.part2 > h1, .part2 > p { text-align: center; font-family: 'Source Sans Pro', sans-serif; font-size: 35px; }
+
+.part2 > p { font-size: 20px; margin-top: 25px; }
+
+.part3 { 
+    background: url('http://i.imgur.com/ncjtbRz.jpg') no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+.part4 { padding: 15vh 0; }
+
+.part4 > h1 { text-align: center; margin-bottom: 25px; }
+
+.part4 > a { display: block; width: 100px; margin: 0 auto;}
+
+.part5 { padding: 20px 0; background: #ecf0f1; border-top: solid 1px rgba(0, 0, 0, 0.15); }
+
+.part5 > h3 { text-align: center; color: rgba(0, 0, 0, 0.5); font-size: 17px; }
